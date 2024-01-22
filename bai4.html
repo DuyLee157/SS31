@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function truncate(str, n) {
+    if (str.length > n) {
+        return str.slice(0, n) + "...";
+    } else {
+        return str;
+    }
+}
+
+// Ví dụ sử dụng
+const originalString = "This is a long string that needs to be truncated.";
+const maxLength = 20;
+
+const truncatedString = truncate(originalString, maxLength);
+console.log("Truncated string:", truncatedString);
+
+    </script>
+</body>
+</html>

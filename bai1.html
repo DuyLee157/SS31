@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function findLongestWord(inputString) {
+    const words = inputString.split(/\s+/); 
+    let longestWord = "";
+    let maxLength = 0;
+
+    for (const word of words) {
+        const currentLength = word.length;
+        if (currentLength > maxLength) {
+            maxLength = currentLength;
+            longestWord = word;
+        }
+    }
+
+    return { word: longestWord, length: maxLength };
+}
+
+
+const inputString = "Đây là 1 ví dụ về các chuỗi";
+const result = findLongestWord(inputString);
+console.log("Longest word:", result.word);
+console.log("Length:", result.length);
+
+    </script>
+</body>
+</html>

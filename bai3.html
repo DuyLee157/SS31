@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function endsWith(str, target) {
+    return str.endsWith(target);
+}
+const originalString = "Hello, World!";
+const targetString = "World!";
+
+const result = endsWith(originalString, targetString);
+
+if (result) {
+    console.log(`Chuỗi "${originalString}" kết thúc bằng "${targetString}".`);
+} else {
+    console.log(`Chuỗi "${originalString}" không kết thúc bằng "${targetString}".`);
+}
+
+    </script>
+</body>
+</html>
